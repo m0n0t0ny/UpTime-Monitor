@@ -1,0 +1,140 @@
+/* Stili Generali */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #dbdbdb; /* 60% - Colore base */
+  color: #4e4e4e; /* 30% - Colore secondario */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #4e4e4e; /* 30% - Colore secondario */
+  color: #dbdbdb; /* Contrasto con il testo */
+  padding: 15px;
+  text-align: center;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Contenuto */
+.content {
+  padding: 20px;
+}
+
+/* Form per aggiungere server */
+#server-form {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#server-form input[type="text"],
+#server-form input[type="color"],
+#server-form input[type="number"] {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #4e4e4e; /* 30% - Colore secondario */
+  border-radius: 5px;
+  background-color: #dbdbdb; /* 60% - Colore base */
+  color: #4e4e4e;
+}
+
+#add-server-btn {
+  background-color: green;
+}
+
+input[type="color"] {
+  padding: 0px !important;
+  border: none;
+  width: 60px !important;
+  height: 30px !important;
+}
+
+td input {
+  border: none !important;
+}
+
+#server-form button {
+  padding: 20px;
+  background-color: #e76b4b; /* 10% - Colore accent */
+  color: #dbdbdb; /* Contrasto con il testo */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#server-form button:hover {
+  background-color: #d45a3a; /* Leggermente più scuro per effetto hover */
+}
+
+/* Tabella dei server */
+#server-list {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#server-list th,
+#server-list td {
+  border: 1px solid #4e4e4e;
+  padding: 10px;
+  text-align: left;
+}
+
+#server-list th {
+  background-color: #4e4e4e;
+  color: #dbdbdb;
+}
+
+#server-list td input[type="text"],
+#server-list td input[type="color"],
+#server-list td input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #4e4e4e;
+  border-radius: 3px;
+  background-color: #dbdbdb;
+  color: #4e4e4e;
+}
+
+#server-list td button {
+  padding: 5px 10px;
+  color: #dbdbdb;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+/* Pulsante Salva (blu) */
+#server-list td button.save-btn {
+  background-color: #3b82f6; /* Blu per il pulsante Salva */
+}
+
+#server-list td button.save-btn:hover {
+  background-color: #2563eb; /* Colore leggermente più scuro al passaggio del mouse */
+}
+
+/* Pulsante Elimina (rosso) */
+#server-list td button.delete-btn {
+  background-color: #dd0000; /* Rosso per il pulsante Elimina */
+}
+
+#server-list td button.delete-btn:hover {
+  background-color: #b40000;
+}
+
+/* Stile del grafico */
+#server-chart {
+  width: auto !important;
+  height: 500px !important;
+  background-color: #dbdbdb; /* 60% - Colore base */
+  border: 1px solid #4e4e4e; /* 30% - Colore secondario */
+  border-radius: 5px;
+  padding: 20px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Uptime Monitor</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <h1>Uptime Monitor</h1>
+    </nav>
+
+    <!-- Contenuto principale -->
+    <div class="content">
+      <!-- Lista dei server tracciati -->
+      <table id="server-list">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>URL</th>
+            <th>Colore</th>
+            <th>Intervallo (ms)</th>
+            <th>Azioni</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <input
+                type="text"
+                id="server-url"
+                placeholder="URL del server"
+                required
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                id="server-name"
+                placeholder="Nome del server"
+                required
+              />
+            </td>
+            <td><input type="color" id="server-color" value="#e76b4b" /></td>
+            <td>
+              <input
+                type="number"
+                id="server-interval"
+                placeholder="Intervallo (ms)"
+                min="1000"
+                value="5000"
+                required
+              />
+            </td>
+            <td><button id="add-server-btn">Aggiungi Server</button></td>
+          </tr>
+          <!-- Le righe dei server verranno aggiunte dinamicamente -->
+        </tbody>
+      </table>
+
+      <!-- Grafico -->
+      <canvas id="server-chart"></canvas>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
